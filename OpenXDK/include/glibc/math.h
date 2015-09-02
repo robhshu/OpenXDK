@@ -87,7 +87,7 @@ extern __CONSTVALUE double atanh __P ((double __x));
 extern __CONSTVALUE double exp __P ((double __x));
 
 /* Break VALUE into a normalized fraction and an integral power of 2.  */
-extern double frexp __P ((double __value, int *__exp));
+extern double frexp __P ((double __dvalue, int *__exp));
 
 /* X times (two to the EXP power).  */
 extern __CONSTVALUE double ldexp __P ((double __x, int __exp));
@@ -108,7 +108,7 @@ extern __CONSTVALUE double log1p __P ((double __x));
 #endif
 
 /* Break VALUE into integral and fractional parts.  */
-extern double modf __P ((double __value, double *__iptr));
+extern double modf __P ((double __dvalue, double *__iptr));
 
 
 /* Power functions.  */
@@ -142,13 +142,13 @@ extern __CONSTVALUE double fmod __P ((double __x, double __y));
 
 /* Return 0 if VALUE is finite or NaN, +1 if it
    is +Infinity, -1 if it is -Infinity.  */
-extern __CONSTVALUE int __isinf __P ((double __value));
+extern __CONSTVALUE int __isinf __P ((double __dvalue));
 
 /* Return nonzero if VALUE is not a number.  */
-extern __CONSTVALUE int __isnan __P ((double __value));
+extern __CONSTVALUE int __isnan __P ((double __dvalue));
 
 /* Return nonzero if VALUE is finite and not NaN.  */
-extern __CONSTVALUE int __finite __P ((double __value));
+extern __CONSTVALUE int __finite __P ((double __dvalue));
 #ifdef	__OPTIMIZE__
 #define	__finite(value)	(!__isinf(value))
 #endif
@@ -195,9 +195,9 @@ struct __cabs_complex
 /* Return `sqrt(X*X + Y*Y)'.  */
 extern __CONSTVALUE double cabs __P ((struct __cabs_complex));
 
-extern __CONSTVALUE int isinf __P ((double __value));
-extern __CONSTVALUE int isnan __P ((double __value));
-extern __CONSTVALUE int finite __P ((double __value));
+extern __CONSTVALUE int isinf __P ((double __dvalue));
+extern __CONSTVALUE int isnan __P ((double __dvalue));
+extern __CONSTVALUE int finite __P ((double __dvalue));
 extern __CONSTVALUE double infnan __P ((int __error));
 extern __CONSTVALUE double copysign __P ((double __x, double __y));
 extern __CONSTVALUE double scalb __P ((double __x, int __n));
