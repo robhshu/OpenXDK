@@ -53,7 +53,7 @@
 // **************************************************************************
 void	vga_testpattern( int shift)
 {
-	int	x,y,i;
+	int	x,y;
 	uint32 *pix = (uint32*)g_ScreenBase; 
 
 	for(y=0;y<480;y++){
