@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{37feb9c1-51d5-4609-9cab-9dd377da3ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{78ee9a9c-e285-4f80-820c-d9af0b5a78b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\xboxkrnl\dbg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\ex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\hal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\io.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\kernel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\mm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\nt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\ob.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\ps.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\rtl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\xbox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xboxkrnl\xboxkrnl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xboxkrnl\dbg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\ex.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\hal.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\io.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\kernel.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\mm.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\nt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\ob.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\ps.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\rtl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xboxkrnl\xbox.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\xboxkrnl\xboxkrnl.def" />
+  </ItemGroup>
+</Project>

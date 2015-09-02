@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{1B835E03-F4A1-4094-8D28-C9EF37674049}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\lib\</OutDir>
+    <IntDir>.\lib\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/QIfist  %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>include;include\xlibc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_XBOX;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <PrecompiledHeaderOutputFile>.\lib/xboxkrnl.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\lib/</AssemblerListingLocation>
+      <ObjectFileName>.\lib/</ObjectFileName>
+      <ProgramDataBaseFileName>.\lib/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\lib/xboxkrnl.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>.\src\xboxkrnl\xboxkrnl.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>.\lib/xboxkrnl.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>XboxKrnlEntryDummy</EntryPointSymbol>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\lib/xboxkrnl.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\xboxkrnl\dbg.h" />
+    <ClInclude Include="include\xboxkrnl\ex.h" />
+    <ClInclude Include="include\xboxkrnl\hal.h" />
+    <ClInclude Include="include\xboxkrnl\io.h" />
+    <ClInclude Include="include\xboxkrnl\kernel.h" />
+    <ClInclude Include="include\xboxkrnl\mm.h" />
+    <ClInclude Include="include\xboxkrnl\nt.h" />
+    <ClInclude Include="include\xboxkrnl\ob.h" />
+    <ClInclude Include="include\xboxkrnl\ps.h" />
+    <ClInclude Include="include\xboxkrnl\rtl.h" />
+    <ClInclude Include="include\xboxkrnl\xbox.h" />
+    <ClInclude Include="include\xboxkrnl\xboxkrnl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xboxkrnl\dbg.c" />
+    <ClCompile Include="src\xboxkrnl\ex.c" />
+    <ClCompile Include="src\xboxkrnl\hal.c" />
+    <ClCompile Include="src\xboxkrnl\io.c" />
+    <ClCompile Include="src\xboxkrnl\kernel.c" />
+    <ClCompile Include="src\xboxkrnl\mm.c" />
+    <ClCompile Include="src\xboxkrnl\nt.c" />
+    <ClCompile Include="src\xboxkrnl\ob.c" />
+    <ClCompile Include="src\xboxkrnl\ps.c" />
+    <ClCompile Include="src\xboxkrnl\rtl.c" />
+    <ClCompile Include="src\xboxkrnl\xbox.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\xboxkrnl\xboxkrnl.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

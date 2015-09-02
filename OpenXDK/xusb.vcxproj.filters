@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{013acad2-fc8e-499c-948f-ed9584c1c47f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\linux">
+      <UniqueIdentifier>{19959aed-abad-4d63-aa20-1ba3b271d9aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\asm">
+      <UniqueIdentifier>{309053bc-16cc-40f4-8e22-111bb3dd2bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{7c0ad6e0-f5a1-4c3f-bfd8-9d24e8d4e415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sys">
+      <UniqueIdentifier>{4652df31-1100-4348-81eb-afd6d2502388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\host">
+      <UniqueIdentifier>{39169f7d-1395-4fa9-b7c5-1b81282cba00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{db3d2cca-1b8d-44aa-a838-f5cfcea5f552}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\xusb\linux_wrapper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xusb\xusb.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xusb\linux\usb.h">
+      <Filter>include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xusb\linux\usb_ch9.h">
+      <Filter>include\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xusb\asm\bitops.h">
+      <Filter>include\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xusb\asm\errno.h">
+      <Filter>include\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xusb\asm\pci_ids.h">
+      <Filter>include\asm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xusb\sys\BootUSB.c">
+      <Filter>src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\sys\linuxwrapper.c">
+      <Filter>src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\sys\usbwrapper.c">
+      <Filter>src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\sys\xpad.c">
+      <Filter>src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\host\ohci-hcd.c">
+      <Filter>src\host</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\host\ohci-pci.c">
+      <Filter>src\host</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\buffer_simple.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\config.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\hcd-pci.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\hcd.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\hub.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\message.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\urb.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\usb-debug.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xusb\core\usb.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

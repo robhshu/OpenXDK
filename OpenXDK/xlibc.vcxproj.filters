@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1b30048e-f9c9-476a-b506-20db106be19a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\String">
+      <UniqueIdentifier>{bf8c913d-4212-4990-974f-26708c6e63ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\stdio">
+      <UniqueIdentifier>{aea85c0c-aee8-4b02-bb5f-7a09c87715d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{bffc7def-e6e7-49ec-926a-afc4120b63a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{82d1ab0f-b41d-4576-9b4b-6b40be9ad350}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xlibc\abort.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\abs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\div.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\itoa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\ldiv.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\ltoa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\malloc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\misc_vars.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\rand.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\__memccpy.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\memcmp.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\memcpy.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\memset.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\strcat.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\strcmp.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\strcpy.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\strlen.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\strncat.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\string\strncmp.c">
+      <Filter>src\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\stdio\conio.c">
+      <Filter>src\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\stdio\file_io.c">
+      <Filter>src\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\stdio\sprintf.c">
+      <Filter>src\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\acos.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\asin.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\atan.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\ceil.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\exp.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\fabs.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\floor.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\fmod.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\ftol.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\hypot.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\log.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\pow.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\sincos.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\sqrt.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlibc\math\tan.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\xlibc\ansidecl.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlibc\ctype.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlibc\malloc.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlibc\math.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlibc\stdarg.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlibc\stdio.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlibc\stdlib.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlibc\string.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{66665710-a0bd-4726-8140-ddae8f9e844e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{e76935e5-20de-4bfb-854a-737692f21f34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xhal\xfile.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xhal\xnvidia.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xhal\xohci.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xhal\xohci_pci.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xhal\xstartup.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xhal\xsysfont.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xhal\xvga.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xhal\xvga_sys.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\xhal\xfile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xhal\xfile_def.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xhal\xnvidia.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xhal\xohci.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xhal\xohci_pci.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xhal\xvga.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xhal\xvga_def.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xhal\xhal.h" />
+  </ItemGroup>
+</Project>

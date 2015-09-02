@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{46891D02-0E3F-4F7C-973C-D55B92C70D87}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\lib\glibc\</OutDir>
+    <IntDir>.\lib\glibc\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>include\glibc;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_LIBC;__STD_C;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <PrecompiledHeaderOutputFile>.\lib\glibc/glibc.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\lib\glibc/</AssemblerListingLocation>
+      <ObjectFileName>.\lib\glibc/</ObjectFileName>
+      <ProgramDataBaseFileName>.\lib\glibc/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+      <OutputFile>lib\glibc.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\glibc\__random.c" />
+    <ClCompile Include="src\glibc\abs.c" />
+    <ClCompile Include="src\glibc\atof.c" />
+    <ClCompile Include="src\glibc\atoi.c" />
+    <ClCompile Include="src\glibc\bsearch.c" />
+    <ClCompile Include="src\glibc\ctype.c" />
+    <ClCompile Include="src\glibc\ctypes.c" />
+    <ClCompile Include="src\glibc\div.c" />
+    <ClCompile Include="src\glibc\fileio.c" />
+    <ClCompile Include="src\glibc\itoa.c" />
+    <ClCompile Include="src\glibc\labs.c" />
+    <ClCompile Include="src\glibc\ldiv.c" />
+    <ClCompile Include="src\glibc\malloc.c" />
+    <ClCompile Include="src\glibc\misc_vars.c" />
+    <ClCompile Include="src\glibc\qsort.c" />
+    <ClCompile Include="src\glibc\rand.c" />
+    <ClCompile Include="src\glibc\random.c" />
+    <ClCompile Include="src\glibc\sbrk.c" />
+    <ClCompile Include="src\glibc\srand.c" />
+    <ClCompile Include="src\glibc\strtol.c" />
+    <ClCompile Include="src\glibc\strtoul.c" />
+    <ClCompile Include="src\glibc\string\__memccpy.c" />
+    <ClCompile Include="src\glibc\string\__stpncpy.c" />
+    <ClCompile Include="src\glibc\string\bcmp.c" />
+    <ClCompile Include="src\glibc\string\bcopy.c" />
+    <ClCompile Include="src\glibc\string\bzero.c" />
+    <ClCompile Include="src\glibc\string\ffs.c" />
+    <ClCompile Include="src\glibc\string\index.c" />
+    <ClCompile Include="src\glibc\string\memccpy.c" />
+    <ClCompile Include="src\glibc\string\memchr.c" />
+    <ClCompile Include="src\glibc\string\memcmp.c" />
+    <ClCompile Include="src\glibc\string\memcpy.c" />
+    <ClCompile Include="src\glibc\string\memfrob.c" />
+    <ClCompile Include="src\glibc\string\memmem.c" />
+    <ClCompile Include="src\glibc\string\memmove.c" />
+    <ClCompile Include="src\glibc\string\memset.c" />
+    <ClCompile Include="src\glibc\string\rindex.c" />
+    <ClCompile Include="src\glibc\string\stpcpy.c" />
+    <ClCompile Include="src\glibc\string\stpncpy.c" />
+    <ClCompile Include="src\glibc\string\strcasecmp.c" />
+    <ClCompile Include="src\glibc\string\strcat.c" />
+    <ClCompile Include="src\glibc\string\strchr.c" />
+    <ClCompile Include="src\glibc\string\strcmp.c" />
+    <ClCompile Include="src\glibc\string\strcpy.c" />
+    <ClCompile Include="src\glibc\string\strcspn.c" />
+    <ClCompile Include="src\glibc\string\strdup.c" />
+    <ClCompile Include="src\glibc\string\strfry.c" />
+    <ClCompile Include="src\glibc\string\strlen.c" />
+    <ClCompile Include="src\glibc\string\strncase.c" />
+    <ClCompile Include="src\glibc\string\strncat.c" />
+    <ClCompile Include="src\glibc\string\strncmp.c" />
+    <ClCompile Include="src\glibc\string\strncpy.c" />
+    <ClCompile Include="src\glibc\string\strpbrk.c" />
+    <ClCompile Include="src\glibc\string\strrchr.c" />
+    <ClCompile Include="src\glibc\string\strsep.c" />
+    <ClCompile Include="src\glibc\string\strspn.c" />
+    <ClCompile Include="src\glibc\string\strstr.c" />
+    <ClCompile Include="src\glibc\string\strtok.c" />
+    <ClCompile Include="src\glibc\string\swab.c" />
+    <ClCompile Include="src\glibc\string\wordcopy.c" />
+    <ClCompile Include="src\glibc\stdio\conio.c" />
+    <ClCompile Include="src\glibc\stdio\file_io.c" />
+    <ClCompile Include="src\glibc\stdio\snprintf.c" />
+    <ClCompile Include="src\glibc\math\__expm1.c" />
+    <ClCompile Include="src\glibc\math\__finite.c" />
+    <ClCompile Include="src\glibc\math\__rint.c" />
+    <ClCompile Include="src\glibc\math\__scalb.c" />
+    <ClCompile Include="src\glibc\math\_fltused.c" />
+    <ClCompile Include="src\glibc\math\acosh.c" />
+    <ClCompile Include="src\glibc\math\asincos.c" />
+    <ClCompile Include="src\glibc\math\asinh.c" />
+    <ClCompile Include="src\glibc\math\atan.c" />
+    <ClCompile Include="src\glibc\math\atan2.c" />
+    <ClCompile Include="src\glibc\math\atanh.c" />
+    <ClCompile Include="src\glibc\math\ceil.c" />
+    <ClCompile Include="src\glibc\math\copysign.c" />
+    <ClCompile Include="src\glibc\math\cosh.c" />
+    <ClCompile Include="src\glibc\math\drem.c" />
+    <ClCompile Include="src\glibc\math\exp.c" />
+    <ClCompile Include="src\glibc\math\exp__E.c" />
+    <ClCompile Include="src\glibc\math\expm1.c" />
+    <ClCompile Include="src\glibc\math\fabs.c" />
+    <ClCompile Include="src\glibc\math\finite.c" />
+    <ClCompile Include="src\glibc\math\floor.c" />
+    <ClCompile Include="src\glibc\math\fmod.c" />
+    <ClCompile Include="src\glibc\math\infnan.c" />
+    <ClCompile Include="src\glibc\math\isinf.c" />
+    <ClCompile Include="src\glibc\math\isnan.c" />
+    <ClCompile Include="src\glibc\math\log.c" />
+    <ClCompile Include="src\glibc\math\log1p.c" />
+    <ClCompile Include="src\glibc\math\log__L.c" />
+    <ClCompile Include="src\glibc\math\logb.c" />
+    <ClCompile Include="src\glibc\math\modf.c" />
+    <ClCompile Include="src\glibc\math\pow.c" />
+    <ClCompile Include="src\glibc\math\rint.c" />
+    <ClCompile Include="src\glibc\math\scalb.c" />
+    <ClCompile Include="src\glibc\math\sincos.c" />
+    <ClCompile Include="src\glibc\math\sinh.c" />
+    <ClCompile Include="src\glibc\math\tan.c" />
+    <ClCompile Include="src\glibc\math\tanh.c" />
+    <ClCompile Include="src\glibc\math\ieee754\__copysign.c" />
+    <ClCompile Include="src\glibc\math\ieee754\__drem.c" />
+    <ClCompile Include="src\glibc\math\ieee754\__infnan.c" />
+    <ClCompile Include="src\glibc\math\ieee754\__isinf.c" />
+    <ClCompile Include="src\glibc\math\ieee754\__isnan.c" />
+    <ClCompile Include="src\glibc\math\ieee754\__logb.c" />
+    <ClCompile Include="src\glibc\math\ieee754\cabs.c" />
+    <ClCompile Include="src\glibc\math\ieee754\cbrt.c" />
+    <ClCompile Include="src\glibc\math\ieee754\frexp.c" />
+    <ClCompile Include="src\glibc\math\ieee754\ldexp.c" />
+    <ClCompile Include="src\glibc\math\ieee754\log10.c" />
+    <ClCompile Include="src\glibc\math\ieee754\sqrt.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\glibc\ctype.h" />
+    <ClInclude Include="src\glibc\gnu-stabs.h" />
+    <ClInclude Include="src\glibc\math\mathimpl.h" />
+    <ClInclude Include="src\glibc\math\trig.h" />
+    <ClInclude Include="src\glibc\math\ieee754\ieee754.h" />
+    <ClInclude Include="include\glibc\ansidecl.h" />
+    <ClInclude Include="include\glibc\conio.h" />
+    <ClInclude Include="include\glibc\ctype.h" />
+    <ClInclude Include="include\glibc\defs.h" />
+    <ClInclude Include="include\glibc\endian.h" />
+    <ClInclude Include="include\glibc\errno.h" />
+    <ClInclude Include="include\glibc\errnos.h" />
+    <ClInclude Include="include\glibc\features.h" />
+    <ClInclude Include="include\glibc\features_old.h" />
+    <ClInclude Include="include\glibc\float.h" />
+    <ClInclude Include="include\glibc\gnu-stabs.h" />
+    <ClInclude Include="include\glibc\huge_val.h" />
+    <ClInclude Include="include\glibc\limits.h" />
+    <ClInclude Include="include\glibc\malloc.h" />
+    <ClInclude Include="include\glibc\math.h" />
+    <ClInclude Include="include\glibc\memcopy.h" />
+    <ClInclude Include="include\glibc\stdarg.h" />
+    <ClInclude Include="include\glibc\stddef.h" />
+    <ClInclude Include="include\glibc\stdio.h" />
+    <ClInclude Include="include\glibc\stdlib.h" />
+    <ClInclude Include="include\glibc\string.h" />
+    <ClInclude Include="include\glibc\bits\endian.h" />
+    <ClInclude Include="include\glibc\bits\types.h" />
+    <ClInclude Include="include\glibc\misc\sys\cdefs.h" />
+    <ClInclude Include="include\glibc\string\endian.h" />
+    <ClInclude Include="include\glibc\sys\cdefs.h" />
+    <ClInclude Include="include\glibc\sys\djtypes.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

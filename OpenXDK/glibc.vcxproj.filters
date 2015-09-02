@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{18891012-4b67-4b7e-bdc7-3e9fe70a70e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\string">
+      <UniqueIdentifier>{0521130a-5513-48f9-938e-30e10b69563f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\stdio">
+      <UniqueIdentifier>{fba2ce4f-9015-44b9-bf2d-addfd1d1d585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{c70440ee-bc8d-4fbe-8405-fa5c3827536a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math\ieee754">
+      <UniqueIdentifier>{a6ed23fd-49b0-4ec1-9c4b-f317bad59f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{febdad22-6db4-492f-aafa-0e259666a9fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bits">
+      <UniqueIdentifier>{4532dd2c-0a0c-4b64-af64-8d99c3b02464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\misc">
+      <UniqueIdentifier>{c9105993-1e2e-4c8b-832a-a79d01efe076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\misc\sys No. 1">
+      <UniqueIdentifier>{8d3a84e7-8e2f-4c29-9647-5e2a61fbb7b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\string No. 1">
+      <UniqueIdentifier>{b14676cf-334a-475c-b8bd-3e811ef62f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sys">
+      <UniqueIdentifier>{2c03315d-5782-427c-9793-c85913e36b13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\glibc\__random.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\abs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\atof.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\atoi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\bsearch.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\ctype.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\ctypes.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\div.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\fileio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\itoa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\labs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\ldiv.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\malloc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\misc_vars.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\qsort.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\rand.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\random.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\sbrk.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\srand.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\strtol.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\strtoul.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\__memccpy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\__stpncpy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\bcmp.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\bcopy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\bzero.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\ffs.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\index.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\memccpy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\memchr.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\memcmp.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\memcpy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\memfrob.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\memmem.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\memmove.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\memset.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\rindex.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\stpcpy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\stpncpy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strcasecmp.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strcat.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strchr.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strcmp.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strcpy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strcspn.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strdup.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strfry.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strlen.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strncase.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strncat.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strncmp.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strncpy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strpbrk.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strrchr.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strsep.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strspn.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strstr.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\strtok.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\swab.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\string\wordcopy.c">
+      <Filter>src\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\stdio\conio.c">
+      <Filter>src\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\stdio\file_io.c">
+      <Filter>src\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\stdio\snprintf.c">
+      <Filter>src\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\__expm1.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\__finite.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\__rint.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\__scalb.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\_fltused.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\acosh.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\asincos.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\asinh.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\atan.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\atan2.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\atanh.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ceil.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\copysign.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\cosh.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\drem.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\exp.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\exp__E.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\expm1.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\fabs.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\finite.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\floor.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\fmod.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\infnan.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\isinf.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\isnan.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\log.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\log1p.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\log__L.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\logb.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\modf.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\pow.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\rint.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\scalb.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\sincos.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\sinh.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\tan.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\tanh.c">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\__copysign.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\__drem.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\__infnan.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\__isinf.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\__isnan.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\__logb.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\cabs.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\cbrt.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\frexp.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\ldexp.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\log10.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glibc\math\ieee754\sqrt.c">
+      <Filter>src\math\ieee754</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\glibc\ctype.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\glibc\gnu-stabs.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\glibc\math\mathimpl.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\glibc\math\trig.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\glibc\math\ieee754\ieee754.h">
+      <Filter>src\math\ieee754</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\ansidecl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\conio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\ctype.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\defs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\endian.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\errno.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\errnos.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\features.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\features_old.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\float.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\gnu-stabs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\huge_val.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\limits.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\malloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\math.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\memcopy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\stdarg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\stddef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\stdio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\stdlib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\string.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\bits\endian.h">
+      <Filter>include\bits</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\bits\types.h">
+      <Filter>include\bits</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\misc\sys\cdefs.h">
+      <Filter>include\misc\sys No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\string\endian.h">
+      <Filter>include\string No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\sys\cdefs.h">
+      <Filter>include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibc\sys\djtypes.h">
+      <Filter>include\sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

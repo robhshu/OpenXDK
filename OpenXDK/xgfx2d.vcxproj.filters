@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{7e4a2f28-c2bd-45d8-b919-9f2cc2646b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{913c8637-c34d-42ac-9db6-df89d152d028}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xgfx2d\bitmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xgfx2d\blit.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xgfx2d\blitters.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xgfx2d\charmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xgfx2d\drawprim.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\xgfx2d\bitmap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xgfx2d\blit.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xgfx2d\blitters.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xgfx2d\charmap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xgfx2d\drawprim.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

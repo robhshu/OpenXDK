@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39801A5B-16E4-4C9D-B288-9DD681061FA9}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\lib\xusb\</OutDir>
+    <IntDir>.\lib\xusb\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>include;include\xusb;include\xlibc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\lib\xusb/xusb.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\lib\xusb/</AssemblerListingLocation>
+      <ObjectFileName>.\lib\xusb/</ObjectFileName>
+      <ProgramDataBaseFileName>.\lib\xusb/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>lib\xusb.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\xusb\linux_wrapper.h" />
+    <ClInclude Include="include\xusb\xusb.h" />
+    <ClInclude Include="include\xusb\linux\usb.h" />
+    <ClInclude Include="include\xusb\linux\usb_ch9.h" />
+    <ClInclude Include="include\xusb\asm\bitops.h" />
+    <ClInclude Include="include\xusb\asm\errno.h" />
+    <ClInclude Include="include\xusb\asm\pci_ids.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xusb\sys\BootUSB.c" />
+    <ClCompile Include="src\xusb\sys\linuxwrapper.c" />
+    <ClCompile Include="src\xusb\sys\usbwrapper.c" />
+    <ClCompile Include="src\xusb\sys\xpad.c" />
+    <ClCompile Include="src\xusb\host\ohci-hcd.c" />
+    <ClCompile Include="src\xusb\host\ohci-pci.c" />
+    <ClCompile Include="src\xusb\core\buffer_simple.c" />
+    <ClCompile Include="src\xusb\core\config.c" />
+    <ClCompile Include="src\xusb\core\hcd-pci.c" />
+    <ClCompile Include="src\xusb\core\hcd.c" />
+    <ClCompile Include="src\xusb\core\hub.c" />
+    <ClCompile Include="src\xusb\core\message.c" />
+    <ClCompile Include="src\xusb\core\urb.c" />
+    <ClCompile Include="src\xusb\core\usb-debug.c" />
+    <ClCompile Include="src\xusb\core\usb.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

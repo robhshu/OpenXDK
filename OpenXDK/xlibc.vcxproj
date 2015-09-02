@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{3EAD3EF6-E1E3-45B2-A0A3-F5AA231DE02E}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\lib\xlibc\</OutDir>
+    <IntDir>.\lib\xlibc\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/QIfist  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>include\xlibc;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_LIBC;__STD_C;STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\lib\xlibc/xlibc.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\lib\xlibc/</AssemblerListingLocation>
+      <ObjectFileName>.\lib\xlibc/</ObjectFileName>
+      <ProgramDataBaseFileName>.\lib\xlibc/</ProgramDataBaseFileName>
+      <WarningLevel>Level2</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+      <OutputFile>lib\xlibc.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xlibc\abort.c" />
+    <ClCompile Include="src\xlibc\abs.c" />
+    <ClCompile Include="src\xlibc\div.c" />
+    <ClCompile Include="src\xlibc\itoa.c" />
+    <ClCompile Include="src\xlibc\ldiv.c" />
+    <ClCompile Include="src\xlibc\ltoa.c" />
+    <ClCompile Include="src\xlibc\malloc.c" />
+    <ClCompile Include="src\xlibc\misc_vars.c" />
+    <ClCompile Include="src\xlibc\rand.c" />
+    <ClCompile Include="src\xlibc\string\__memccpy.c" />
+    <ClCompile Include="src\xlibc\string\memcmp.c" />
+    <ClCompile Include="src\xlibc\string\memcpy.c" />
+    <ClCompile Include="src\xlibc\string\memset.c" />
+    <ClCompile Include="src\xlibc\string\strcat.c" />
+    <ClCompile Include="src\xlibc\string\strcmp.c" />
+    <ClCompile Include="src\xlibc\string\strcpy.c" />
+    <ClCompile Include="src\xlibc\string\strlen.c" />
+    <ClCompile Include="src\xlibc\string\strncat.c" />
+    <ClCompile Include="src\xlibc\string\strncmp.c" />
+    <ClCompile Include="src\xlibc\stdio\conio.c" />
+    <ClCompile Include="src\xlibc\stdio\file_io.c" />
+    <ClCompile Include="src\xlibc\stdio\sprintf.c" />
+    <ClCompile Include="src\xlibc\math\acos.c" />
+    <ClCompile Include="src\xlibc\math\asin.c" />
+    <ClCompile Include="src\xlibc\math\atan.c" />
+    <ClCompile Include="src\xlibc\math\ceil.c" />
+    <ClCompile Include="src\xlibc\math\exp.c" />
+    <ClCompile Include="src\xlibc\math\fabs.c" />
+    <ClCompile Include="src\xlibc\math\floor.c" />
+    <ClCompile Include="src\xlibc\math\fmod.c" />
+    <ClCompile Include="src\xlibc\math\ftol.c" />
+    <ClCompile Include="src\xlibc\math\hypot.c" />
+    <ClCompile Include="src\xlibc\math\log.c" />
+    <ClCompile Include="src\xlibc\math\pow.c" />
+    <ClCompile Include="src\xlibc\math\sincos.c" />
+    <ClCompile Include="src\xlibc\math\sqrt.c" />
+    <ClCompile Include="src\xlibc\math\tan.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\xlibc\ansidecl.h" />
+    <ClInclude Include="include\xlibc\ctype.h" />
+    <ClInclude Include="include\xlibc\malloc.h" />
+    <ClInclude Include="include\xlibc\math.h" />
+    <ClInclude Include="include\xlibc\stdarg.h" />
+    <ClInclude Include="include\xlibc\stdio.h" />
+    <ClInclude Include="include\xlibc\stdlib.h" />
+    <ClInclude Include="include\xlibc\string.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="xboxkrnl.vcxproj">
+      <Project>{1b835e03-f4a1-4094-8d28-c9ef37674049}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
